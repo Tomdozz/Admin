@@ -7,27 +7,27 @@
         <ul>
           <li>
             <a href="#">
-              <span class="icon-picture"></span>
+              <span class="cm-icon icon-mainpage"></span>
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="icon-headphones"></span>
+              <span class="cm-icon icon-calender"></span>
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="icon-home"></span>
+              <span class="cm-icon icon-files"></span>
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="icon-facetime-video"></span>
+              <span class="cm-icon icon-settings"></span>
             </a>
           </li>
           <li>
             <a href="#">
-              <span class="icon-envelope-alt"></span>
+              <span class="cm-icon icon-settings"></span>
             </a>
           </li>
         </ul>
@@ -73,6 +73,11 @@ export default {
 /*
 *To-do: Move out to seperate file
 */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .cn-wrapper {
   font-size: 1em;
   width: 26em;
@@ -231,5 +236,23 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+}
+.cm-icon{
+  display: inline-block;
+  width:50px; 
+  height:50px;
+  transform: scale(0.7);
+}
+.icon-mainpage {
+  background-image: url("../../imgs/icons8-document-50 (1).png");
+}
+.icon-calender{
+    background-image: url("../../imgs/icons8-calendar-50.png");
+}
+.icon-settings {
+    background-image: url("../../imgs/icons8-settings-50.png");
+}
+.icon-files{
+    background-image: url("../../imgs/icons8-folder-50.png");
 }
 </style>
