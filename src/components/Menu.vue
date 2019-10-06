@@ -6,7 +6,7 @@
       <div class="cn-wrapper" id="cn-wrapper">
         <ul>
           <li>
-            <a href="#">
+            <a href="#/firstPageEditor">
               <span class="cm-icon icon-mainpage"></span>
             </a>
           </li>
@@ -51,16 +51,16 @@ export default {
   },
   methods: {
     toggle() {
-      console.log(this.collapsed);
+      //console.log(this.collapsed);
       this.collapsed = !this.collapsed;
       var wrapper = this.$el.querySelector(".cn-wrapper");
-      console.log(wrapper);
+     // console.log(wrapper);
 
       if (!this.collapsed) {
         wrapper.classList.add("opened-nav");
         //openNav();
       } else {
-        console.log("remove");
+       // console.log("remove");
         wrapper.classList.remove("opened-nav");
         //closeNav();
       }

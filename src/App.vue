@@ -2,6 +2,7 @@
   <div id="app">
     <!--<img alt="Vue logo" src="./assets/logo.png">-->
     <Menu title="Titties"/>
+    <router-view></router-view>
     <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
   </div>
 </template>
@@ -9,20 +10,7 @@
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
 import Menu from './components/Menu.vue'
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-
-Vue.use(VueRouter);
-
-const router = new VueRouter({
-  mode: 'history',
-  base: __dirname,
-  routes: [
-    { path: '/', component: App },
-    { path: '/about', component: About },
-    { path: '/contact', component: Contact }
-  ]
-});
+//import Vue from 'vue';
 
 export default {
   name: 'app',
